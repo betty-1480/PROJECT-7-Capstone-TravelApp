@@ -1,0 +1,56 @@
+.flightForm{
+    grid-area:addFlightForm;
+    border: .25rem solid lightgrey;
+    border-radius: 12px;
+    width: 65vw;
+    display: grid;
+    grid-template-columns: 1fr;                       
+    grid-template-rows: 10vh 7vh 7vh 7vh 7vh 7vh;   
+    grid-template-areas:"FFC11 FFC11 FFC11 FFC14" 
+    "FFC2 FFC2 FFC2 FFC2" 
+    "FFC3 FFC3 FFC3 FFC3" 
+    "FFC4 FFC4 FFC4 FFC4" 
+    "FFC5 FFC5 FFC5 FFC5" 
+    "FFC61 FFC62 FFC63 FFC64";
+} 
+.flightFormItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+}
+.closeButton{
+    grid-area:FFC14;
+    align-items:center;
+    justify-content:flex-end;
+    float: right;
+}
+.u00D7{
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.u00D7:hover{
+    background-color: red;
+    color: white;
+}
+.itinerary{
+    grid-area:FFC11;
+    align-items: center;
+    justify-content: center;
+}
+.departure{
+    grid-area:FFC2;
+}
+.gate{
+    grid-area:FFC3;  
+}
+.airCraft{
+    grid-area:FFC4;
+}
+.arrival{
+    grid-area:FFC5;
+}
+.submitItinerary{
+    grid-area:FFC64;
+}

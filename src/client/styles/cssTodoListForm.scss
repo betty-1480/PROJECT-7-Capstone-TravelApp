@@ -1,0 +1,33 @@
+.todoForm{
+    grid-area: addTodoList;
+    border: .25rem solid lightgrey;
+    border-radius: 12px;
+}
+.u002B{
+    padding-left: 5px;
+    padding-right: 5px;
+    border: .05rem solid green;
+}
+.u002B:hover{
+    background-color: green;
+    color: white;
+}
+.todo{
+    text-align: center;
+}
+
+#todoListItems{
+    display: -moz-grid-groupd;
+    display: grid;
+    grid-template-columns: .5fr;                       
+    grid-template-rows: 25vh;   
+    grid-template-areas: "todoListColumn1 todoListColumn2";
+}
+#todoListItemsUL{
+    grid-area:todoListColumn1;
+}
+
+#close{
+    position: absolute;
+    padding: 2px 6px 2px 6px;
+}

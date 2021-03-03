@@ -1,0 +1,19 @@
+.headerBox{
+    grid-area: H;
+    border: .25rem solid lightgrey;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;                       
+    grid-template-rows: 12vh 13vh;   
+    grid-template-areas: "hTitle hTitle";
+    border: .25rem solid lightgrey;
+}
+
+.hTitle{
+    grid-area: hTitle;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-evenly;
+    align-items: center;
+    
+}

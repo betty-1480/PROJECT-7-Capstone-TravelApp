@@ -1,0 +1,15 @@
+ .footerBox{
+    grid-area: F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: .25rem solid lightgrey;
+    border-radius: 12px;
+    text-align: start;
+}
+.footerImg{
+    width:42px;
+    height:42px;
+    border:0;
+}

@@ -1,0 +1,74 @@
+@import "cssChapterContents.scss";
+.chapterBox{
+    grid-area: myTrip;
+    display: grid;
+    grid-template-columns: 1fr 1fr;                       
+    grid-template-rows: 40vh;  
+    grid-template-areas: "myTripColumn1 myTripColumn2"
+                          "myTripButtons myTripButtons";
+    border: .25rem solid lightgray;
+    border-radius: 12px; 
+    padding: 15px;
+}
+.hoverObj:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.myTripColumn1{
+    grid-area: myTripColumn1;
+   
+    display: grid;
+    grid-template-columns: 1fr;  
+    grid-template-rows: 25vh;                         
+    grid-template-areas: "myTripImg";
+}
+
+.myTripColumn2{
+    grid-area: myTripColumn2;
+    display: grid;
+    align-items: center;
+    justify-content: flex-end;
+    grid-template-columns: 1fr 1fr;                       
+    grid-template-rows: 5 vh
+                        5 vh
+                        5 vh
+                        5 vh
+                        5 vh;   
+    grid-template-areas:"buttonSave buttonRemove" 
+                        "myTripTo myTripTo"
+                        "departing departing"
+                        "daysAway daysAway"
+                        "weather weather"
+                        ;
+}
+.buttonSave{
+    grid-area:buttonSave;
+}
+.buttonRemove{
+    grid-area:buttonRemove;
+    justify-content: end;
+}
+.tripTo{
+    grid-area:myTripTo;
+}
+.flightInfo{
+    grid-area:departing;
+}
+.daysAway{
+    grid-area:daysAway;
+}
+.weather{
+    grid-area:weather;
+}
+.myTripButtons{
+    grid-area:myTripButtons;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.tripFormItem{
+    font-size:x-large;
+    font-weight: bold;
+    padding: 5px;
+    align-items: flex-start;
+}

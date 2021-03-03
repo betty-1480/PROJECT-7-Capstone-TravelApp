@@ -1,0 +1,19 @@
+@import "cssHeaderBox.scss";
+@import "cssAddTrip.scss";
+@import "cssIndexChapterBox.scss";
+@import "cssFooterBox.scss";
+
+.container{
+    display: grid;
+    width: 65vw;
+    height: auto;
+    margin: auto;
+    grid-template-columns: 1fr;                       
+    grid-template-rows: 15vh 
+                        50vh            
+                        15vh;   
+    grid-gap:12px;
+    grid-template-areas: "H"
+                        "myTrip" 
+                        "F";
+} 
