@@ -6,7 +6,7 @@ const getWeatherData=async()=>{
       const latitude = geoInfo.geonames[0].lat;
       const longitude = geoInfo.geonames[0].lng;
       const country = geoInfo.geonames[0].countryName;
-      const response=await fetch(`http://localhost:8080/weather?latitude=${latitude}&longitude=${longitude}`);
+      const response=await fetch(`http://localhost:8081/weather?latitude=${latitude}&longitude=${longitude}`);
       try {
         const weatherInfo = await response.json();
         const weather=weatherInfo.data[0].high_temp;

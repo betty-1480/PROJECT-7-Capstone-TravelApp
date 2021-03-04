@@ -13,8 +13,8 @@ app.use(express.static('dist')) //app.use(express.static('src/client'))
 
 console.log(__dirname)
 // Define what port the app will listen to for incoming requests
-app.listen(8080, function () {
-    console.log('Example app listening on port 8080!')
+app.listen(8081, function () {
+    console.log('Example app listening on port 8081!')
 })
 
 app.get('/', function (req, res) {
