@@ -8,9 +8,14 @@ const mockAPIResponse = require('./mockAPI.js')
 const app = express()
 
 // HtmlWebPackPlugin helps to dynamic reference to dist
+//Initialize the project to distribution folder
 app.use(express.static('dist')) //app.use(express.static('src/client'))
 
 console.log(__dirname)
+// Define what port the app will listen to for incoming requests
+app.listen(8080, function () {
+    console.log('Example app listening on port 8080!')
+})
 
 app.get('/', function (req, res) {
     //res.sendFile('/client/views/index.html', { root: __dirname + '/..' })
@@ -34,8 +39,7 @@ app.use(bodyParser.json())
 const cors = require("cors")
 app.use(cors())
 
-//Initialize the project to distribution folder
-app.use(express.static('dist'))
+
 
 console.log(__dirname)
 
@@ -94,11 +98,6 @@ app.get("/weather",async(req,res)=>{
 app.get("/all", (req, res) => {
     res.send(pixabayData);
 });
-
-// Define what port the app will listen to for incoming requests
-app.listen(8081, function () {
-    console.log('Example app listening on port 8080!')
-})
 
 app.get('/myGetRoute',getData);
 function getData(req,res){
