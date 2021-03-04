@@ -45,10 +45,6 @@ const textApi = '19294380-75e7581ecffdb6df0de0d8558';
 let baseURL = 'https://pixabay.com/api/';
 let lang = '&lang=en';
 
-app.get('/', function (req, res) {
-    res.sendFile('dist/index.html');
-})
-
 app.post('/pixabay', async(req, res) => {
     try {
 
