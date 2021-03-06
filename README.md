@@ -21,3 +21,8 @@ The project will include a form where you enter the location you are traveling t
 •	To get webpack running, first run npm run dev, then npm build to get dist folder created. Once that is created run npm run dev and npm start simultaneously to have hot loading of the project as well as a working express environment.
 •	Accounts have been created with geonames api, Weatherbit api, and Pixabay api
 
+## Extend Project Further - Roadmap/Strategy
+Following features are implemented to extend the project further:
+•	Allow the user to add flight data.
+•	Allow the user to remove the trip.
+•	Allow the user to add a todo list for their trip.
