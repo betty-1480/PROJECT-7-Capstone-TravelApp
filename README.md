@@ -3,11 +3,8 @@
 ## Project Summary
 ----------------
 This project aims to build a custom travel app which is JavaScript heavy, expecting to create a clean and appealing HTML/CSS. 
-
 It is targeting the DOM, working with objects, and retrieving data from 3 APIs in which one of those is reliant on another to work. 
-
 Finally, this is all going to be done in a Webpack environment, using an express server, and wrapped up with service workers.
-
 The project will include a form where you enter the location you are traveling to and the date you are leaving. You will get the current weather forecast using the Weatherbit API. Weatherbit API only takes in coordinates for weather data. So, the application get those coordinates from the Geonames API. Once have all of this data, it display an image of the location entered using the Pixabay API.
 
 ## Webpack set up to work with this project
