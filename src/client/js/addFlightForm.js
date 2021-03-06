@@ -1,7 +1,7 @@
 import {getGridTemplateRows} from "./getGridTemplateRows"
 import {setGridTemplateRows} from "./setGridTemplateRows"
+//display a flight itinerary form when click the 'Add Flight Itinerary' button
 function addFlightForm(){
-
     document.getElementById("addFlightForm").innerHTML = `
     <div id="flightForm" class="flightForm">
     <div class="closeButton flightFormItem">

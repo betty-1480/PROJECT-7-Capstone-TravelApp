@@ -1,10 +1,8 @@
 import {getFlightFormItems} from "./getFlightFormItems"
-
+//display the flight itinerary in the tabular format
 function addItineraryTable(){
   const flightFormItems = getFlightFormItems();
-  //const departure = flightFormItems.departure;
-
-    flightForm.parentElement.removeChild(flightForm);
+      flightForm.parentElement.removeChild(flightForm);
     document.getElementById("addFlightForm").innerHTML =`
     <div class="itineraryTable">
     <div class="closeButton">

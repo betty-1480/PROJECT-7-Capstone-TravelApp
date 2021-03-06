@@ -1,6 +1,4 @@
 function addTripForm(){
-
-
     document.getElementById("container").style.gridTemplateRows=`15vh 
     45vh 
     48vh 
@@ -9,7 +7,7 @@ function addTripForm(){
     "myTrip"
     "flightInfo"
     "F"`;
-
+    
     document.getElementById("addTrip").innerHTML = 
     `<div id="addTripForm">
         <label for="location">My Trip to:</label>

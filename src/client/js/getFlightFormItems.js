@@ -1,3 +1,4 @@
+// function to retrieve data from flight itinerary form
 function getFlightFormItems(){
     const flightFormItems = {
         departure : document.getElementById('txtDeparture').value,

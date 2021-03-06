@@ -1,6 +1,7 @@
 import {getGridTemplateRows} from "./getGridTemplateRows"
 import {setGridTemplateRows} from "./setGridTemplateRows"
 import {addTodoListItems} from "./addTodoListItems"
+//create a to do list when click the 'ToDo List' button
 function addToDoListForm(){
   document.getElementById("addTodoList").innerHTML = 
   `<div class="todoForm" id="todoForm">

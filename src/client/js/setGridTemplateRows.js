@@ -1,4 +1,6 @@
 import {getGridTemplateRows} from "./getGridTemplateRows"
+/*method to set css properties programatically of '.container' element 
+when 'flight itinerary' or 'todo list' options are selected*/
 function setGridTemplateRows(){
   let rows="";
   let areas="";

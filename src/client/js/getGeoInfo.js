@@ -1,6 +1,5 @@
-
+//function to fectch coordinates of a location from Geonames API
 const getGeoInfo = async (location) => {
-    //location=document.getElementById('location').value;
     const response = await fetch(`http://localhost:8081/geo?q=${location}`);
     try {
         const geoInfo = await response.json();

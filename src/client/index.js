@@ -1,5 +1,5 @@
 import { handleSubmit } from './js/formHandler';
-import { showResults, checkForName } from './js/nameChecker';
+import { showResults } from './js/nameChecker';
 import {numberOfDaysAway} from './js/daysAway';
 import {addFlightForm} from './js/addFlightForm';
 import {removeTripForm} from './js/removeTripForm';
@@ -19,7 +19,6 @@ import './styles/cssItineraryTable.scss'
 
 export{
     handleSubmit,
-    checkForName,
     showResults,
     numberOfDaysAway,
     addFlightForm,

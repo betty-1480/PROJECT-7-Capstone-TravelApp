@@ -2,9 +2,7 @@
     grid-area:addFlightForm;
     border: .25rem solid lightgrey;
     border-radius: 12px;
-    width: 65vw;
-    display: grid;
-    grid-template-columns: 1fr;                       
+    display: grid;            
     grid-template-rows: 10vh 7vh 7vh 7vh 7vh 7vh;   
     grid-template-areas:"FFC11 FFC11 FFC11 FFC14" 
     "FFC2 FFC2 FFC2 FFC2" 

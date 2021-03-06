@@ -1,6 +1,5 @@
-
+  // pull an image of the trip location from Pixabay API and display
 const getPixaby = async(location)=>{
-    //let formText = document.getElementById('location').value+ " landmark";
     let formText = location+ " landmark";
    const response = fetch('http://localhost:8081/pixabay', {
         method: "POST",

@@ -1,15 +1,13 @@
 function dateDifference(tripDate){
     const today = Date.now()/1000;
-    //const tripDate = new Date(document.getElementById('tripDate').value).getTime()/1000;
     const tripDate1=new Date(tripDate).getTime()/1000;
     return Math.round((tripDate1-today)/ (3600 * 24));
-   //return (today - new Date(document.getElementById('tripDate').value)) / (1000 * 3600 * 24);
 }
-
+//number of days between two dates
 function numberOfDaysAway(tripDate) {
     const numberOfDays=dateDifference(tripDate);
     document.getElementById("daysAway").innerHTML = `is ${numberOfDays} days away`;
-
+    //count down
     const countDownDate = new Date(tripDate).getTime();
     const x = setInterval(function() {
         const now = new Date().getTime();

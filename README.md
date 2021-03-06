@@ -1,27 +1,26 @@
-# Webbpack Express Example App
+# PROJECT 7-Capstone-TravelApp
 
-The goal of this repo is be an example of a basic but functional app built on Express and Webpack.
+## Project Summary
+----------------
+This project aims to build a custom travel app which is JavaScript heavy, expecting to create a clean and appealing HTML/CSS. 
 
-If you want to follow along with the course, you will start from the master and switch to the appropriate numbered branches of this repo as needed. The branches are:
-- [0-initial-setup](https://github.com/udacity/fend-webpack-content/tree/0-initial-setup)
-- [1-install-webpack](https://github.com/udacity/fend-webpack-content/tree/1-install-webpack)
-- [2-add-webpack-entry](https://github.com/udacity/fend-webpack-content/tree/2-add-webpack-entry)
-- [3-webpack-output-and-loaders](https://github.com/udacity/fend-webpack-content/tree/3-webpack-output-and-loaders)
-- [4-webpack-plugins](https://github.com/udacity/fend-webpack-content/tree/4-webpack-plugins)
-- [5-webpack-mode](https://github.com/udacity/fend-webpack-content/tree/5-webpack-mode)
-- [6-webpack-for-convenience](https://github.com/udacity/fend-webpack-content/tree/6-webpack-for-convenience)
+It is targeting the DOM, working with objects, and retrieving data from 3 APIs in which one of those is reliant on another to work. 
 
-Each one is a step along the path to creating a fully functional webpack setup. In each branch, there will be a documentation file that lists out the steps taken in that branch (each step is also a git commit if you look at the history) which you can use as a checklist when setting up your own projects. 
+Finally, this is all going to be done in a Webpack environment, using an express server, and wrapped up with service workers.
 
-## Get Up and Running
+The project will include a form where you enter the location you are traveling to and the date you are leaving. You will get the current weather forecast using the Weatherbit API. Weatherbit API only takes in coordinates for weather data. So, the application get those coordinates from the Geonames API. Once have all of this data, it display an image of the location entered using the Pixabay API.
 
-Fork this repo, then clone your forked repo down to your computer:
+## Webpack set up to work with this project
+-----------------------------------------------
+•	The src folder should contain a client folder and a server folder.
+•	Server folder should contain your server.js content.
+•	Client folder should contain a js folder, media folder, styles folder, and views folder, as well as an index.js file.
+•	Application js should go into the js file, css into styles, and index.html into views.
+•	 Webpack builds a dist file. Server access the dist folder. app.use(express.static('dist'))
+•	index.js file inside the client folder imports the main function of the application javascript, it imports scss, and it exports main function from the application javascript. 
+•	babel, babel loader, css loader, file loader, html loader, html webpack plugin, node sass, sass loader, style loader, webpack, webpack cli, and webpack dev server have been added to get webpack going
+•	Scripts are added in package.json for test, dev, start, and build. 
+•	Source maps is used to debug css.
+•	To get webpack running, first run npm run dev, then npm build to get dist folder created. Once that is created run npm run dev and npm start simultaneously to have hot loading of the project as well as a working express environment.
+•	Accounts have been created with geonames api, Weatherbit api, and Pixabay api
 
-```
-git clone -- git@github.com:[your-user-name]/webpack-express.git --
-```
-
-`cd` into your new folder and run:
-- ```npm install```
-- ```npm start``` to start the app
-- this app runs on localhost:8080, but you can of course edit that in index.js
