@@ -1,12 +1,12 @@
 const request = require('supertest');
 import '@babel/polyfill';
-const app = require('../../server/index.js') 
+const fetch = require('node-fetch') /*Since jest run on node environment which does not have fetch API like 
+in a browser, it is producing referenceError. To fix this use node-fetch module to 
+require fetch in app.js)*/
+const app = require('../../../server/index.js')  // Link to your server file
 
-
-describe('Test root path', () => {
-    test('It should response the GET method', async () => {
-        const response = await request(app).get('/geo');
-        expect(response.statusCode).toBe(200);
-    });
+// import { startupMessage } from './server'
+const startupMessage = require('../../../server/index.js');
+test('listen', () => {
+    expect(startupMessage).toBeDefined();
 });
-

@@ -26,4 +26,4 @@ function numberOfDaysAway(tripDate) {
         }
     }, 1000);
 }
-export { numberOfDaysAway }
+export { numberOfDaysAway,dateDifference }
